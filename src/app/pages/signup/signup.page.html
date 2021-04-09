@@ -1,0 +1,85 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="ion-no-margin">
+
+    <ion-card-header>
+                                          <!-- CHANGES MADE  -->
+      <!-- This line was commented out because the sign up page will come before the log in therefore we do not need a back button in this page -->
+      <!-- <div class="return-btns">
+        <ion-button (click)="RedirectToOtherPage()" style="text-transform: none" fill="clear" class="ion-no-padding">  << Back to Login</ion-button>
+      </div> -->
+
+      <img class="displayed" height="100 px" width="100 px" src="assets/images/Logo.png">
+      
+      <ion-card-title>
+        Welcome
+      </ion-card-title>
+      
+      <ion-card-subtitle style="text-transform: none" class="quote">
+        Join the Lunarina community!
+        A world of wonder awaits...
+      </ion-card-subtitle>
+    </ion-card-header>
+    
+                          <!-- CHANGES MADE - Icons added to the front of input fields -->
+    <ion-card-content>
+      <div class="wrapform">
+        <ion-item>
+          <ion-icon color="primary"  size="small" name="mail" slot="start"></ion-icon>
+          <ion-input type="text" [(ngModel)]="email" placeholder="Email" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon color="primary" size="small" name="key" slot="start"></ion-icon>
+          <ion-input type="password" name="password" [(ngModel)]="password" placeholder="Password" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon color="primary" size="small" name="call" slot="start"></ion-icon>
+          <ion-input type="phonenumber" name="phonenumber" [(ngModel)]="phonenumber" placeholder="Phone Number" optional></ion-input>
+        </ion-item>
+      </div>
+
+      <!-- Checkbox for terms and conditions and sign up button. They are under the same form so user will not be able to sign up without marking checkbox first -->
+      <form action="#" onsubmit="if(document.getElementById('agree').checked) { return true; } else { alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy'); return false; }">
+
+        <input class="checkbox" type="checkbox" name="checkbox" value="check" id="agree" /> Agree to the Terms and Conditions
+          <div class="signup-btns">
+          <ion-button type="submit" fill="solid" shape="round" class="signup-btns">
+          Sign Up
+          </ion-button>
+        </div>
+
+      </form>
+      
+      <!-- Social media buttons. Include facebook/google/apple. Signup by email is commented out because it is not needed. -->
+      <div class="social-btns">
+
+        <ion-button style="text-transform: none" fill="solid" shape="box">  Sign up with Facebook
+          <ion-icon name="logo-facebook" style="color:white"></ion-icon>
+        </ion-button>
+        <ion-button style="text-transform: none" fill="solid" shape="box" class="google"> Sign up  with Google
+          <ion-icon name="logo-google" style="color:white"></ion-icon>
+        </ion-button>
+        <ion-button style="text-transform: none" fill="solid" shape="box" class="apple"> Sign up with Apple
+          <ion-icon name="logo-apple" style="color:white"></ion-icon></ion-button>
+          <!-- THIS BUTTON IS NOT NEEDED  -->
+          <!-- <ion-button style="text-transform: none" fill="solid" shape="box" shape="box" class="Email">Sign Up with Email
+          <ion-icon name="mail" style="color:white"></ion-icon></ion-button> -->
+      </div>
+
+      <!-- Already a member button will redirect to login page -->
+      <div class="new-member-and-forgot">
+        <ion-button (click)="RedirectToLoginPage()" style="text-transform: none" fill="clear">Already have an account? Login!</ion-button>
+        <br>
+        <!-- This line is commented out because there is no point in having a forgot password in the sign up AND the log in (the way is shown in the wireframe) -->
+        <!-- <ion-button (click)="RedirectToOtherForgotPage()" style="text-transform: none" fill="clear" >Forgot password?</ion-button> -->
+      </div>
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>

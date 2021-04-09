@@ -1,0 +1,118 @@
+ion-content{
+    --ion-background-color:#e7b7df;
+    //--background: url(/assets/images/loginbackground.png) no-repeat center/cover fixed;
+    --background: url(/assets/images/lunaback.jpg) no-repeat center/cover;
+    //--background: url(/assets/images/Key.png) no-repeat center/cover fixed;
+}
+
+ion-header{
+    position:absolute;
+}
+
+ion-card{
+    --ion-background-color:transparent;
+    box-shadow: none;
+}
+
+
+ion-toolbar{
+    --ion-background-color:transparent;
+    --opacity:0;
+}
+
+ion-card-title{
+    font-family: Copperplate;
+    margin-top: 5px;
+    font-size: 40px;
+    color:#d17171;
+    text-align: center;
+    font-weight: 600;
+}
+
+ion-card-subtitle{
+    font-family: Copperplate;
+    padding-top: 5px;
+    font-size: 20px;
+    color:#d17171;
+    text-align: center;
+    font-weight: 350;
+}
+
+// Lunarina Logo on top of page
+.displayed {
+    margin-top: 30px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 40px;
+}
+
+//Quote under WELCOME title
+.quote {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+//This applies to all the input fields Email/Pass/Phonenum
+.wrapform{
+    margin-top: 15px;
+}
+
+//This applies to all icons added because we want color to match
+ion-icon {
+    --ion-color-primary:#d17171;
+    
+}
+
+.signup-btns{
+    margin-top: 10px;
+    margin-left: 45px;
+    text-align: center;
+    height: 25px;
+    width: 100px;
+    --ion-color-primary:#d17171;
+}
+
+// Sign up page no longer needs a return button 
+// .return-btns{
+//     margin-top: 30px;
+//     margin-left: 20px;
+//     --ion-color-primary:#d17171;
+//     text-align: left;
+//     ion-button{
+//         font-size: 10px;
+//     }
+// }
+
+.checkbox {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+  // CHANGES: ADDED ICONS TO SOCIAL BUTTONS 
+.social-btns{    
+    --ion-color-primary:#d17171;
+   margin-top: 20px;
+   text-align: center;
+   ion-button{
+       font-size: small;
+       padding-right: 10px;
+       height: 25px;
+       width: 195px;
+   }
+   ion-icon {
+    position: absolute;
+    left:145px;
+    }
+}
+
+.new-member-and-forgot{
+    text-align: center;
+    --ion-color-primary:#d17171;
+    ion-button{
+        font-size: 10px;
+    }
+}
+

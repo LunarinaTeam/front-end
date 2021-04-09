@@ -1,0 +1,109 @@
+ion-content{
+    //--ion-background-color:#e7b7df;
+    --background: url(/assets/images/loginbackground.png) no-repeat center/cover fixed;
+    //--background: url(/assets/images/moonwomen.png) no-repeat center/cover fixed;
+    //--background: url(/assets/images/Key.png) no-repeat center/cover fixed;
+}
+
+ion-header{
+    position:absolute;
+}
+
+ion-card{
+    --ion-background-color:transparent;
+    box-shadow: none;
+}
+
+
+ion-toolbar{
+    --ion-background-color:transparent;
+    --opacity:0;
+}
+
+
+ion-card-title{
+    font-family: Copperplate;
+    margin-top: 5px;
+    font-size: 40px;
+    color:#d17171;
+    text-align: center;
+    font-weight: 600;
+}
+
+ion-card-subtitle{
+    font-family: Copperplate;
+    padding-top: 5px;
+    font-size: 20px;
+    color:#d17171;
+    text-align: center;
+    font-weight: 350;
+}
+.displayed {
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    width: 60px;
+}
+
+ion-icon {
+    --ion-color-primary:#d17171;
+    
+}
+.login-btns{
+    margin-top: 15px;
+    text-align: center;
+    --ion-color-primary:#d17171;
+}
+
+.text-tag{
+    margin-top: 5px;
+    text-align: center;
+    span{
+        font-size:13px;
+        font-weight:normal;
+        color: blue($color: #888585);
+    }
+}
+
+.password_forgot{
+    margin-left: 20px;
+    --ion-color-primary:#d17171;
+    text-align: left;
+    ion-button{
+        font-family: Copperplate;
+        font-size: 10px;
+    }
+}
+
+.social-btns{    
+    --ion-color-primary:#d17171;
+    // CHANGES NEEDED: ADD ICONS TO SOCIAL BUTTONS 
+   margin-top: 20px;
+   text-align: center;
+   ion-button{
+        font-family: Copperplate;
+        font-size: small;
+        padding-right: 10px;
+        height: 25px;
+        width: 190px;
+   }
+   ion-icon {
+    position: absolute;
+    left:140px;
+    }
+}
+
+.return-btns{
+    margin-top: 30px;
+    margin-left: 20px;
+    --ion-color-primary:#d17171;
+    text-align: left;
+    ion-button{
+        font-family: Copperplate;
+        font-weight:bold;
+        font-size: 15px;
+    }
+}
