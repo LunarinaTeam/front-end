@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'signup',
+    redirectTo: 'tracking1',
     pathMatch: 'full'
   },
   {
@@ -23,6 +23,12 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
+  {
+    path: 'tracking1',
+    loadChildren: () => import('./pages/tracking1/tracking1.module').then( m => m.Tracking1PageModule)
+  }
+
+
 ];
 
 @NgModule({
