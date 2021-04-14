@@ -2,7 +2,6 @@
 </ion-header>
 
 <ion-content>
-  <ion-card class="ion-no-margin">
     <!-- Upper right return button will return to sign up page-->
     <div class="return-btns">
       <ion-button (click)="RedirectToOtherPage()" style="text-transform: none" fill="clear" class="ion-no-padding">
@@ -22,12 +21,12 @@
     <ion-card-content>
       <div class="wrapform">
         
-        <ion-item>
+        <ion-item color="transparent">
           <ion-icon color="primary"  size="small" name="mail" slot="start"></ion-icon>
           <ion-input type="text" [(ngModel)]="email" placeholder="Email" required></ion-input>
         </ion-item>
 
-        <ion-item>
+        <ion-item color="transparent">
           <ion-icon color="primary" size="small" name="key" slot="start"></ion-icon>
           <ion-input type="password" name="password" [(ngModel)]="password" placeholder="Password" required></ion-input>
         </ion-item>
@@ -39,7 +38,7 @@
       </div>
       
       <div class="login-btns">
-        <ion-button size="small" fill="solid" shape="round" class="loginbtn">
+        <ion-button style="text-transform: none" fill="solid" shape="round" class="loginbtn">
           Login
         </ion-button>
       </div>
@@ -54,15 +53,9 @@
         </ion-button>
         <ion-button style="text-transform: none" fill="solid" shape="box" class="apple">Login with Apple
           <ion-icon name="logo-apple" style="color:white"></ion-icon></ion-button>
-          <!-- DO NOT NEED THIS BUTTON ANYMORE  -->
-          <!-- <ion-button (click)="RedirectToOtherPage()" style="text-transform: none" fill="solid" shape="box" class="Email">Sign Up with Email
-          <ion-icon name="mail" style="color:white"></ion-icon>
-        </ion-button>
-     -->
       </div>
 
     </ion-card-content>
 
-  </ion-card>
 
 </ion-content>

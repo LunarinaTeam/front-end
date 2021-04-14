@@ -52,10 +52,20 @@ ion-icon {
     --ion-color-primary:#d17171;
     
 }
-.login-btns{
+
+.wrapform{
     margin-top: 15px;
+    ion-item{
+        color: grey;
+    }
+}
+
+.login-btns{
     text-align: center;
     --ion-color-primary:#d17171;
+    ion-button{
+        font-family: Copperplate;
+    }
 }
 
 .text-tag{
@@ -88,11 +98,11 @@ ion-icon {
         font-size: small;
         padding-right: 10px;
         height: 25px;
-        width: 190px;
+        width: 215px;
    }
    ion-icon {
     position: absolute;
-    left:140px;
+    left:170px;
     }
 }
 
@@ -104,6 +114,6 @@ ion-icon {
     ion-button{
         font-family: Copperplate;
         font-weight:bold;
-        font-size: 15px;
+        font-size: 10px;
     }
 }
