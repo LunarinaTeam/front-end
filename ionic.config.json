@@ -1,5 +1,7 @@
 {
   "name": "Lunarina",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

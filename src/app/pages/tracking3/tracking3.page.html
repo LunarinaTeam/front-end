@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Tracking Setup</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card-subtitle class=sub-title style="text-transform: none">
+    Do you know how long your cycle lasts?
+  </ion-card-subtitle>
+
+   <div class=btn-container>
+    <div class=btn-center>
+      <ion-button (click)="RedirectToOtherPage()" type="submit" size="small" fill="solid" shape="round" class="yes-btn">I don't remember</ion-button>
+    </div>
+    <div class=btn-center>
+      <ion-button (click)="RedirectToOtherPage()" type="submit" size="small" fill="solid" shape="round" class="yes-btn">1-4 days</ion-button>
+      <ion-button (click)="RedirectToOtherPage()" type="submit" size="small" fill="solid" shape="round" class="yes-btn">5-8 days</ion-button>
+      <ion-button (click)="RedirectToOtherPage()" type="submit" size="small" fill="solid" shape="round" class="yes-btn">9-12 days</ion-button>
+    </div>
+  </div>
+
+</ion-content>
