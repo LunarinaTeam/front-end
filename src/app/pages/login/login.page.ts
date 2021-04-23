@@ -22,4 +22,9 @@ export class LoginPage implements OnInit {
   {
     this.router.navigateByUrl('/forgotpassword')
   }
+
+  RedirectToHomePage()
+  {
+    this.router.navigateByUrl('/tablinks/home')
+  }
 }
