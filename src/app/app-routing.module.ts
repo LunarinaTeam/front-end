@@ -26,18 +26,7 @@ const routes: Routes = [
   {
     path: 'tracking1',
     loadChildren: () => import('./pages/tracking1/tracking1.module').then( m => m.Tracking1PageModule)
-  },
-  {
-    path: 'tracking2',
-    loadChildren: () => import('./pages/tracking2/tracking2.module').then( m => m.Tracking2PageModule)
-  },
-  {
-    path: 'tracking3',
-    loadChildren: () => import('./pages/tracking3/tracking3.module').then( m => m.Tracking3PageModule)
   }
-
-
-
 
 
 ];
@@ -46,6 +35,6 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
   ],
-  exports: [RouterModule],
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }
