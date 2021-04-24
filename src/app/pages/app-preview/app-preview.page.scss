@@ -1,0 +1,121 @@
+ion-slides {
+  height: 100%;
+  --bullet-background-active:#d39393;
+  background-color: #efe1d4;
+  border-color: #efe1d4;
+  --color:#efe1d4;
+}
+
+.welcome{
+  background-image: url("../../../assets/images/welcomebackground@2x.jpg");
+  background-size: cover;
+  background-position: right 5px bottom 10px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.welcome::before{
+  opacity:.5;
+}
+
+.welcome h4{
+  font-family: Georgia;
+  font-size: 3.125em;
+  font-weight: normal;
+  color:#ce9788; 
+  border-radius: 3px;
+  text-align: center;
+  position: static;
+  padding-top: 40px;
+  padding-bottom: 526px;
+  padding-left:0px;
+  position:absolute;
+}
+
+.welcome h5{
+
+  font-family: Georgia;
+  font-size: 1em;
+  font-weight: normal;
+  color:#E89494; 
+  border-radius: 3px;
+  text-align: center;
+  position: absolute;
+  padding-bottom:410px;
+}
+
+.welcome p{
+  font-family: Georgia;
+  font-size: .8em;
+  font-weight: normal;
+  color:#E89494; 
+  border-radius: 3px;
+  text-align: center;
+  position: absolute;
+  padding-top:160px;
+  margin-left:20px;
+  margin-right:20px;
+  line-height: 1.6;
+}
+
+.welcome h3{
+  font-family: Georgia;
+  font-size: .8em;
+  font-weight: normal;
+  color:#E89494; 
+  padding-top:719px;
+}
+
+.welcome iframe{
+  position: absolute;
+  margin-bottom:139px;
+}
+
+.home-card{
+    height: 586px;
+    width: 300px;
+    position: absolute;
+    --color: #ffffff;
+    background-image: url("../../../assets/images/moonwomen.png");
+}
+
+.tracking-card{
+  height: 586px;
+  width: 300px;
+  position: absolute;
+  --color: #ffffff;
+  background-image: url("../../../assets/images/moonwomen.png");
+}
+
+.circle-card{
+  height: 586px;
+  width: 300px;
+  position: absolute;
+  --color: #ffffff;
+  background-image: url("../../../assets/images/moonwomen.png");
+}
+
+.home h3{
+  font-family: Georgia;
+  font-size: .8em;
+  font-weight: normal;
+  color:#E89494; 
+  padding-top:700px;
+}
+
+.tracking h3{
+  font-family: Georgia;
+  font-size: .8em;
+  font-weight: normal;
+  color:#E89494; 
+  padding-top:700px;
+}
+
+.circle h3{
+  font-family: Georgia;
+  font-size: .8em;
+  font-weight: normal;
+  color:#E89494; 
+  padding-top:700px;
+}
