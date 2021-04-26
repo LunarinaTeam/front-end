@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-
 @Component({
   selector: 'app-test-slide',
   templateUrl: './app-preview.page.html',
@@ -11,9 +10,11 @@ export class TestSlidePage implements OnInit {
     initialSlide: 1,
     speed: 400,
   };
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
+  }
+  routeToSignUp(){
   }
 
 }
