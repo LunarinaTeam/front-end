@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'tracking1',
+    redirectTo: 'app-preview',
     pathMatch: 'full'
   },
   {
@@ -24,11 +24,9 @@ const routes: Routes = [
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'tracking1',
-    loadChildren: () => import('./pages/tracking1/tracking1.module').then( m => m.Tracking1PageModule)
+    path: 'app-preview',
+    loadChildren: () => import('./pages/app-preview/app-preview.module').then( m => m.TestSlidePageModule)
   }
-
-
 ];
 
 @NgModule({
