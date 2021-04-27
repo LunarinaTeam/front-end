@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-test-slide',
@@ -10,11 +11,16 @@ export class TestSlidePage implements OnInit {
     initialSlide: 1,
     speed: 400,
   };
-  constructor() {}
+  constructor(public router:Router) { }
 
   ngOnInit() {
   }
   routeToSignUp(){
+  }
+
+  RedirectToLoginPage()
+  {
+    this.router.navigateByUrl('/login')
   }
 
 }

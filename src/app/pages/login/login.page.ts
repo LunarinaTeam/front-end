@@ -15,7 +15,7 @@ export class LoginPage implements OnInit {
 
   RedirectToOtherPage()
   {
-    this.router.navigateByUrl('/signup')
+    this.router.navigateByUrl('/app-preview')
   }
 
   RedirectToOtherForgotPage()
