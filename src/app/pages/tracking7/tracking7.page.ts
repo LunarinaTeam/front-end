@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-tracking3',
-  templateUrl: './tracking3.page.html',
-  styleUrls: ['./tracking3.page.scss'],
+  selector: 'app-tracking7',
+  templateUrl: './tracking7.page.html',
+  styleUrls: ['./tracking7.page.scss'],
 })
-export class Tracking3Page implements OnInit {
+export class Tracking7Page implements OnInit {
 
   constructor(public router:Router) { }
 
@@ -15,7 +15,8 @@ export class Tracking3Page implements OnInit {
 
   RedirectToOtherPage()
   {
-    this.router.navigateByUrl('/tracking4')
+    this.router.navigateByUrl('/tracking8')
   }
 
 }
+

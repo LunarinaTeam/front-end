@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Tracking Setup</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card-subtitle class=sub-title style="text-transform: none">
+    Do you remember the last day of your most recent period? If not, please tap "I don't remember"
+  </ion-card-subtitle>
+
+  <div class=btn-container>
+    <div class=btn-center>
+      <ion-button (click)="RedirectToOtherPage()" type="submit" size="small" fill="solid" shape="round" class="yes-btn">Select date</ion-button>
+      <ion-button (click)="RedirectToOtherPage()" type="submit" size="small" fill="solid" shape="round" class="yes-btn">I don't remember</ion-button>
+      <br>
+      <div class=date-container>
+        <ion-item lines="none" id=picker>
+          <ion-label>MM/DD/YYYY</ion-label>
+          <ion-datetime displayFormat="MM/DD/YYYY" min="1994-03-14" max="2022-12-31"></ion-datetime>
+        </ion-item>
+      </div>
+    </div>
+  </div>
+
+</ion-content>
+
