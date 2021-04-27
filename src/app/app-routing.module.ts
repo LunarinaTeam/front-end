@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'tracking1',
+    redirectTo: 'splash',
     pathMatch: 'full'
   },
   {
@@ -26,7 +26,12 @@ const routes: Routes = [
   {
     path: 'tracking1',
     loadChildren: () => import('./pages/tracking1/tracking1.module').then( m => m.Tracking1PageModule)
+  },
+  {
+    path: 'splash',
+    loadChildren: () => import('./pages/splash/splash.module').then( m => m.SplashPageModule)
   }
+
 
 
 ];
