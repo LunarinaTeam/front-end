@@ -20,9 +20,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'app-preview',
+    path: 'signup',
     loadChildren: () => import('./pages/signup/signup.module').then( m => m.TestSlidePageModule)
   }
+
 ];
 
 @NgModule({
