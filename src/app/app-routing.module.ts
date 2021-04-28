@@ -4,16 +4,12 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'app-preview',
+    redirectTo: 'signup',
     pathMatch: 'full'
   },
   {
     path: 'login',
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
-  },
-  {
-    path: 'signup',
-    loadChildren: () => import('./pages/signup/signup.module').then( m => m.SignupPageModule)
   },
   {
     path: 'forgotpassword',
@@ -25,7 +21,7 @@ const routes: Routes = [
   },
   {
     path: 'app-preview',
-    loadChildren: () => import('./pages/app-preview/app-preview.module').then( m => m.TestSlidePageModule)
+    loadChildren: () => import('./pages/signup/signup.module').then( m => m.TestSlidePageModule)
   }
 ];
 
