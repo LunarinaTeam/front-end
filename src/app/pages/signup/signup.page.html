@@ -40,14 +40,25 @@
         A world of wonder awaits...</h5>
  
         <ion-card-content>
+
+          <form [formGroup]="ValidationFormUser" (ngSubmit) = "registerUser(ValidationFormUser.value)">
           <div class="wrapform">
             <ion-item color="transparent">
               <ion-icon color="primary"  size="small" name="mail" slot="start"></ion-icon>
-              <ion-input type="text" [(ngModel)]="email" placeholder="Email" required></ion-input>
+              <ion-input type="text" name="email" [(ngModel)]="email" formControlName="email" placeholder="Email" required></ion-input>
             </ion-item>
+
+            <div class="signup_error_messages">
+              <ng-container *ngFor="let validation of ValidationMessages.email">
+                  <div class="error_message" *ngIf="ValidationFormUser.get('email').hasError('validation.type') && (ValidationFormUser.get('email').dirty || ValidationFormUser.get('email').touched)">
+                      {{validation.message}}
+                  </div>
+              </ng-container>
+            </div>
+
             <ion-item color="transparent"> 
               <ion-icon color="primary" size="small" name="key" slot="start"></ion-icon>
-              <ion-input type="password" name="password" [(ngModel)]="password" placeholder="Password" required></ion-input>
+              <ion-input type="password" name="password" [(ngModel)]="password" formControlName="password" placeholder="Password" required></ion-input>
             </ion-item>
             <ion-item color="transparent">
               <ion-icon color="primary" size="small" name="call" slot="start"></ion-icon>
@@ -62,7 +73,7 @@
               Agree to the Terms and Conditions
             </ion-text>
               <div class="signup-btns">
-              <ion-button style="text-transform: none" type="submit" fill="solid" shape="round" class="signup-btns">
+              <ion-button style="text-transform: none" type="submit" fill="solid" shape="round" class="signup-btns" [disabled]="!ValidationFormUser.valid">
               Sign Up
               </ion-button>
             </div>
@@ -86,6 +97,8 @@
             <ion-button (click)="RedirectToLoginPage()" style="text-transform: none" fill="clear">Already have an account? Login!</ion-button>
             <br>
           </div>
+
+        </form>
         </ion-card-content>
     </ion-slide>
 

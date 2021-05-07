@@ -65,4 +65,8 @@ export class LoginPage implements OnInit {
   {
     this.router.navigateByUrl('/tablinks/home')
   }
+  callMethodsForLoginOnClick(){
+    this.RedirectToOtherPage(); 
+   // this.LoginUser(validationFormUser.value);
+  }
 }
