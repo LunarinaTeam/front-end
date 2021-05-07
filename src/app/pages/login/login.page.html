@@ -2,6 +2,7 @@
 </ion-header>
 
 <ion-content>
+  
     <!-- Upper right return button will return to sign up page-->
     <div class="return-btns">
       <ion-button (click)="RedirectToOtherPage()" style="text-transform: none" fill="clear" class="ion-no-padding">
@@ -19,16 +20,26 @@
     <!-- in card content you will find - input for email/password , forgot password button
       which takes used to forgot page, login button, and social media buttons for login purposes-->
     <ion-card-content>
+
+      <form [formGroup]="validationFormUser" (ngSubmit) = "LoginUser(validationFormUser.value)">
       <div class="wrapform">
         
         <ion-item color="transparent">
           <ion-icon color="primary"  size="small" name="mail" slot="start"></ion-icon>
-          <ion-input type="text" [(ngModel)]="email" placeholder="Email" required></ion-input>
+          <ion-input type="text" [(ngModel)]="email" formControlName="email" placeholder="Email" required></ion-input>
         </ion-item>
+
+        <div class="login_error_messages">
+          <ng-container *ngFor="let validation of validationUserMessage.email">
+              <div class="error_message" *ngIf="validationFormUser.get('email').hasError('validation.type') && (validationFormUser.get('email').dirty || validationFormUser.get('email').touched)">
+                  {{validation.message}}
+              </div>
+          </ng-container>
+        </div>
 
         <ion-item color="transparent">
           <ion-icon color="primary" size="small" name="key" slot="start"></ion-icon>
-          <ion-input type="password" name="password" [(ngModel)]="password" placeholder="Password" required></ion-input>
+          <ion-input type="password" name="password" [(ngModel)]="password" formControlName="password" placeholder="Password" required></ion-input>
         </ion-item>
 
       </div>
@@ -38,7 +49,9 @@
       </div>
       
       <div class="login-btns">
-        <ion-button (click)="RedirectToHomePage()" size="small" fill="solid" shape="round" class="loginbtn">Login</ion-button>
+        <ion-button (click)="LoginUser(validationFormUser.value), RedirectToHomePage()" size="small" class="loginbtn" style="text-transform: none" fill="solid" shape="round" [disabled]="!validationFormUser.valid">
+          Login
+        </ion-button>
       </div>
 
       <div class="social-btns">
@@ -53,6 +66,7 @@
           <ion-icon name="logo-apple" style="color:white"></ion-icon></ion-button>
       </div>
 
+    </form>
     </ion-card-content>
 
 

@@ -4,16 +4,12 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/tablinks/home',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
     path: 'login',
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
-  },
-  {
-    path: 'signup',
-    loadChildren: () => import('./pages/signup/signup.module').then( m => m.SignupPageModule)
   },
   {
     path: 'forgotpassword',
@@ -29,10 +25,9 @@ const routes: Routes = [
     loadChildren: () => import('./pages/tablinks/tablinks.module').then(m => m.TablinksPageModule)
   },
   {
-    path: 'tracking1',
-    loadChildren: () => import('./pages/tracking1/tracking1.module').then( m => m.Tracking1PageModule)
+    path: 'signup',
+    loadChildren: () => import('./pages/signup/signup.module').then( m => m.TestSlidePageModule)
   }
-
 
 ];
 
