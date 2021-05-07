@@ -38,12 +38,13 @@ export class LoginPage implements OnInit {
       ]))
     })
   }
-  
+
   LoginUser(value){
     console.log("Logged In!"); 
     try{
       this.authService.loginFireauth(value).then(resp =>{
         console.log(resp)
+        this.router.navigateByUrl('/home')
       })
     }catch(err){
       console.log(err); 
