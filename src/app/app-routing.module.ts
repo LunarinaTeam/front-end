@@ -13,7 +13,7 @@ const routes: Routes = [
   },
   {
     path: 'signup',
-    loadChildren: () => import('./pages/signup/signup.module').then( m => m.SignupPageModule)
+    loadChildren: () => import('./pages/signup/signup.module').then( m => m.TestSlidePageModule)
   },
   {
     path: 'forgotpassword',
@@ -34,7 +34,8 @@ const routes: Routes = [
   {
     path: 'tracking3',
     loadChildren: () => import('./pages/tracking3/tracking3.module').then( m => m.Tracking3PageModule)
-  },  {
+  },
+  {
     path: 'tracking4',
     loadChildren: () => import('./pages/tracking4/tracking4.module').then( m => m.Tracking4PageModule)
   },
