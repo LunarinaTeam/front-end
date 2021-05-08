@@ -1,0 +1,55 @@
+ion-content{
+    --background: url(../../../assets/images/wouldyouliketotrackbackground.png) no-repeat center/cover fixed; 
+}
+
+ion-content::before{
+  opacity:53%;
+}
+
+.no-btn{
+    text-align: center;
+    height: 80px;
+    width: 75px;
+    --ion-color-primary:#E89494;
+    font-family: Copperplate;
+    position:absolute;
+    margin-top:112%;
+    padding-top:10%;
+    margin-left:51%;
+  }
+
+  .yes-btn{
+    text-align: center;
+    height: 80px;
+    width: 75px;
+    --ion-color-primary:#E89494;
+    font-family: Copperplate;
+    position:absolute;
+    margin-top:112%;
+    padding-top:10%;
+    margin-left:26%;
+  }
+
+ion-content h5{
+  font-family: Georgia;
+  font-size: 1.5em;
+  font-weight: normal;
+  color:#AF597A; 
+  border-radius: 1%;
+  text-align: center;
+  margin-top:100%;
+  margin-left:23%;
+  position:absolute;
+}
+
+ion-content h6 {
+  font-family: Georgia;
+  font-size: 1em;
+  font-weight: normal;
+  color:#90867E; 
+  border-radius: 1%;
+  text-align: center;
+  margin-top:140%;
+  margin-left:11%;
+  position:absolute;
+}
