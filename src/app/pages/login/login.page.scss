@@ -50,10 +50,9 @@ ion-card-subtitle{
 
 ion-icon {
     --ion-color-primary:#d17171;
-    
 }
 
-.wrapform{
+.login-btns{
     margin-top: 15px;
     ion-item{
         color: grey;
@@ -64,7 +63,8 @@ ion-icon {
     text-align: center;
     --ion-color-primary:#d17171;
     ion-button{
-        font-family: Copperplate;
+        font-family: Garamond Premier Pro;
+        font-size: 10px;
     }
 }
 
@@ -116,4 +116,10 @@ ion-icon {
         font-weight:bold;
         font-size: 10px;
     }
+}
+
+.login_error_messages{
+    margin-left: 20px;
+    --ion-color-primary:#d17171;
+    text-align: left;
 }
