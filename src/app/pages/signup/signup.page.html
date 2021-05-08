@@ -41,44 +41,28 @@
  
         <ion-card-content>
 
-          <form [formGroup]="ValidationFormUser" (ngSubmit) = "registerUser(ValidationFormUser.value)">
+          <form [formGroup]="validationFormUser" (ngSubmit) = "registerUser(validationFormUser.value)">
           <div class="wrapform">
             <ion-item color="transparent">
               <ion-icon color="primary"  size="small" name="mail" slot="start"></ion-icon>
-              <ion-input type="text" name="email" [(ngModel)]="email" formControlName="email" placeholder="Email" required></ion-input>
+              <ion-input type="text" name="emailSignup" [(ngModel)]="emailSignup" formControlName="emailSignup" placeholder="Email" required></ion-input> 
             </ion-item>
 
-            <div class="signup_error_messages">
-              <ng-container *ngFor="let validation of ValidationMessages.email">
-                  <div class="error_message" *ngIf="ValidationFormUser.get('email').hasError('validation.type') && (ValidationFormUser.get('email').dirty || ValidationFormUser.get('email').touched)">
-                      {{validation.message}}
-                  </div>
-              </ng-container>
-            </div>
 
             <ion-item color="transparent"> 
               <ion-icon color="primary" size="small" name="key" slot="start"></ion-icon>
-              <ion-input type="password" name="password" [(ngModel)]="password" formControlName="password" placeholder="Password" required></ion-input>
-            </ion-item>
-            <ion-item color="transparent">
-              <ion-icon color="primary" size="small" name="call" slot="start"></ion-icon>
-              <ion-input type="phonenumber" name="phonenumber" [(ngModel)]="phonenumber" placeholder="Phone Number" optional></ion-input>
+           <ion-input type="password" name="password" [(ngModel)]="password" formControlName="password" placeholder="Password" required></ion-input> 
             </ion-item>
           </div>
 
-          <form action="#" onsubmit="if(document.getElementById('agree').checked) { return true; } else { alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy'); return false; }">
-
-            <input class="checkbox" type="checkbox" name="checkbox" value="check" id="agree">
-            <ion-text color="primary">
-              Agree to the Terms and Conditions
-            </ion-text>
               <div class="signup-btns">
-              <ion-button style="text-transform: none" type="submit" fill="solid" shape="round" class="signup-btns" [disabled]="!ValidationFormUser.valid">
+              <ion-button (click)="registerUser(validationFormUser.value)" style="text-transform: none" type="submit" fill="solid" shape="round" class="signup-btns" [disabled]="!validationFormUser.valid">
               Sign Up
               </ion-button>
+              
             </div>
     
-          </form>
+
           <div class="social-btns">
 
             <ion-button style="text-transform: none" fill="solid" shape="box">  Sign up with Facebook

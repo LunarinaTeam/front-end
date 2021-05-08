@@ -1,8 +1,11 @@
 ion-content{
     //--ion-background-color:#e7b7df;
-    --background: url(/assets/images/loginbackground.png) no-repeat center/cover fixed;
+    --background: url(/assets/images/loginbackground3.png) no-repeat center/cover fixed;
     //--background: url(/assets/images/moonwomen.png) no-repeat center/cover fixed;
     //--background: url(/assets/images/Key.png) no-repeat center/cover fixed;
+}
+ion-content.background{
+    opacity: .53;
 }
 
 ion-header{

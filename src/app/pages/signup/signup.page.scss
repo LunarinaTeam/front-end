@@ -18,7 +18,7 @@ ion-slides {
 }
 
 .welcome::before{
-  opacity:.5;
+  opacity:.7;
 }
 
 .welcome h4{
@@ -130,12 +130,16 @@ display:none;
 // SIGN UP CSS 
   //SIGNUP CSS backgroud image  
   #signup{
-    background-image: url("../../..//assets/images/lunaback.jpg");
+    background-image: url("../../../assets/images/loginbackground3.png");
     background-size: cover;
     background-position: right 5px top 0px ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+  }
+  
+  #signup::before{
+    opacity:.53;
   }
 
 
@@ -153,7 +157,7 @@ display:none;
   font-family: Georgia;
   font-size: 2.5em;
   font-weight: normal;
-  color:#ce9788; 
+  color:#AF597A; 
   border-radius: 3px;
   text-align: center;
   position: static;
@@ -168,7 +172,7 @@ display:none;
   font-family: Georgia;
   font-size: 1em;
   font-weight: normal;
-  color:#E89494; 
+  color:#AF597A; 
   border-radius: 3px;
   text-align: center;
   position: absolute;

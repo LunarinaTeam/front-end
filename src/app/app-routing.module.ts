@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import {AuthGuard} from 'src/app/guards/auth.guard';
 
 const routes: Routes = [
   {
@@ -21,13 +22,15 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./pages/home/home.module').then(m => m.HomePageModule),
+    canActivate: [AuthGuard]
   },
   {
     path: 'tracking1',
     loadChildren: () => import('./pages/tracking1/tracking1.module').then( m => m.Tracking1PageModule)
   },
   {
+
     path: 'tracking2',
     loadChildren: () => import('./pages/tracking2/tracking2.module').then( m => m.Tracking2PageModule)
   },
@@ -66,6 +69,14 @@ const routes: Routes = [
   {
     path: 'tracking',
     loadChildren: () => import('./pages/tracking/tracking.module').then( m => m.TrackingPageModule)
+  },
+  {
+    path: 'signup',
+    loadChildren: () => import('./pages/signup/signup.module').then( m => m.TestSlidePageModule)
+  },
+  {
+    path: 'askfortracking',
+    loadChildren: () => import('./pages/askfortracking/askfortracking.module').then( m => m.AskfortrackingPageModule)
   }
 
 
