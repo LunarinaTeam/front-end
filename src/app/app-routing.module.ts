@@ -62,7 +62,12 @@ const routes: Routes = [
   {
     path: 'tracking10',
     loadChildren: () => import('./pages/tracking10/tracking10.module').then( m => m.Tracking10PageModule)
+  },
+  {
+    path: 'tracking',
+    loadChildren: () => import('./pages/tracking/tracking.module').then( m => m.TrackingPageModule)
   }
+
 
 
 

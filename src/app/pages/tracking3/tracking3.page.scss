@@ -45,6 +45,7 @@ ion-toolbar{
 
 .btn-center {
   margin: 0;
+  padding: 10px;
   position: relative;
   top: 50%;
   left: 50%;
@@ -62,3 +63,42 @@ ion-toolbar{
 ion-button{
   padding: 0px 5px;
 }
+
+.prev-slide-bottom-text{
+  font-family: Copperplate;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  font-size: 10px;
+  color:#818181;
+  text-align: center;
+  font-weight: 350;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.page-number-bottom-text{
+  font-family: Copperplate;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  padding-right: 20px;
+  font-size: 10px;
+  color:#818181;
+  text-align: center;
+  font-weight: 350;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+ion-tab-bar{
+  --background: rgb(232, 148, 148);
+  --color-selected:white;
+}
+
+ion-label{
+  font-family: Garamond Premier Pro;
+  font-size: small;
+}
+
