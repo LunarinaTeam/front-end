@@ -40,13 +40,13 @@ ion-content{
 
 #grid1{
     padding-top: 20px;
-    padding-left: 15px;
+    padding-left: 12px;
     font-family: Garamond Premier Pro;
     font-weight: bold;
     color:rgba(232, 148, 148);
     background-color: #FFFFFF;
     border-radius: 15px;
-    padding:5px;
+    // padding:5px;
     background-size: 25px 25px cover;
     box-shadow: 1px 1px 4px 1px #888888;
     height: 100%;
@@ -56,6 +56,7 @@ ion-content{
     font-size: 12px;
     font-family: Garamond Premier Pro;
     font-weight: lighter;
+    text-align: justify;
 }
 
 .Path_4 {
@@ -109,6 +110,10 @@ ion-content{
     --background:rgba(232,148,148,1);
 }
 
+#videos{
+    padding-top: 5%;
+    padding-left: 5%;
+}
 
 .med_videos{
     padding-left: 5%;
@@ -119,6 +124,36 @@ ion-content{
 
 #com_label{
     color: rgba(232,148,148,1);
+    font-family: Silk Serif;
+
+}
+
+.community{
+    color: rgba(232,148,148,1);
     font-family: Garamond Premier Pro;
-    font-weight: bold;
+    padding-left: 10px;
+    font-size: small;
+}
+
+#circle_cont{
+    color: rgba(232,148,148,1);
+    font-family: Silk Serif;
+    
+}
+
+.circle_text{
+    color: rgba(232,148,148,1);
+    font-family: Garamond Premier Pro;
+    font-size: small;
+    padding-top: 23%;
+}
+
+#Mask_Group_11{
+    padding-top: 10%;
+    padding-left: 20%;
+}
+
+.underline{
+    text-decoration:underline;
+    padding-left: 15%;
 }
