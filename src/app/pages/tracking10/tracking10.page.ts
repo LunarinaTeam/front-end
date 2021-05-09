@@ -16,7 +16,11 @@ export class Tracking10Page implements OnInit {
 
   RedirectToOtherPage()
   {
-    this.router.navigateByUrl('/home')
+    this.router.navigateByUrl('/tablinks/home')
+  }
+  RedirectToOtherPageYes(){
+    this.RedirectToOtherPage();
+    this.PresentAlert();
   }
 
   async PresentAlert()
