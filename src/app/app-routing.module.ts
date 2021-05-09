@@ -78,13 +78,6 @@ const routes: Routes = [
     path: 'askfortracking',
     loadChildren: () => import('./pages/askfortracking/askfortracking.module').then( m => m.AskfortrackingPageModule)
   }
-
-
-
-
-
-
-
 ];
 
 @NgModule({
