@@ -21,6 +21,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/forgotpassword/forgotpassword.module').then( m => m.ForgotpasswordPageModule)
   },
   {
+    path: 'tablinks',
+  loadChildren: () => import('./pages/tablinks/tablinks.module').then( m => m.TablinksPageModule)
+  },
+  {
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then(m => m.HomePageModule),
     canActivate: [AuthGuard]
