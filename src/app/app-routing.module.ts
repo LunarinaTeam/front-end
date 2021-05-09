@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'app-preview',
+    redirectTo: 'usercircle',
     pathMatch: 'full'
   },
   {
@@ -26,7 +26,12 @@ const routes: Routes = [
   {
     path: 'app-preview',
     loadChildren: () => import('./pages/app-preview/app-preview.module').then( m => m.TestSlidePageModule)
+  },
+  {
+    path: 'usercircle',
+    loadChildren: () => import('./pages/usercircle/usercircle.module').then( m => m.UsercirclePageModule)
   }
+
 ];
 
 @NgModule({
