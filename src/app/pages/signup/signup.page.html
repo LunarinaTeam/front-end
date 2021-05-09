@@ -36,24 +36,26 @@
 
       <img class="displayed" height="100 px" width="100 px" src="assets/images/Logo.png">
       <h4>Welcome</h4>
-      <h5> Join the Lunarina community!
+      <h5> Join the Lunarina community! <br>
         A world of wonder awaits...</h5>
  
         <ion-card-content>
 
           <form [formGroup]="validationFormUser" (ngSubmit) = "registerUser(validationFormUser.value)">
-          <div class="wrapform">
-            <ion-item color="transparent">
-              <ion-icon color="primary"  size="small" name="mail" slot="start"></ion-icon>
-              <ion-input type="text" name="emailSignup" [(ngModel)]="emailSignup" formControlName="emailSignup" placeholder="Email" required></ion-input> 
-            </ion-item>
+         
+            <!-- <ion-item class="email" color="transparent"> --> 
+              <ion-icon class="email" color="primary"  size="small" name="mail" slot="start"></ion-icon>
+              <h6 class="email">Email</h6>
+              <ion-input class="email" type="text" name="emailSignup" [(ngModel)]="emailSignup" formControlName="emailSignup"></ion-input> 
+            <!-- </ion-item> ---> 
 
 
-            <ion-item color="transparent"> 
-              <ion-icon color="primary" size="small" name="key" slot="start"></ion-icon>
-           <ion-input type="password" name="password" [(ngModel)]="password" formControlName="password" placeholder="Password" required></ion-input> 
-            </ion-item>
-          </div>
+            <!-- <ion-item class="password" color="transparent"> -->
+              <ion-icon class= "password" color="primary" size="small" name="key" slot="start"></ion-icon>
+              <h6 class= "password" >Password</h6>
+              <ion-input class= "password" type="password" name="password" [(ngModel)]="password" formControlName="password"></ion-input> 
+           <!-- </ion-item> -->
+         
 
               <div class="signup-btns">
               <ion-button (click)="registerUser(validationFormUser.value)" style="text-transform: none" type="submit" fill="solid" shape="round" class="signup-btns" [disabled]="!validationFormUser.valid">
@@ -65,20 +67,20 @@
 
           <div class="social-btns">
 
-            <ion-button style="text-transform: none" fill="solid" shape="box">  Sign up with Facebook
-              <ion-icon name="logo-facebook" style="color:white"></ion-icon>
+            <ion-button class= "facebook" fill="solid" shape="round">  Sign up with Facebook
+             <!--- <ion-icon name="logo-facebook" style="color:white"></ion-icon>-->
             </ion-button>
-            <ion-button style="text-transform: none" fill="solid" shape="box" class="google"> Sign up  with Google
-              <ion-icon name="logo-google" style="color:white"></ion-icon>
+            <ion-button class= "google" fill="solid" shape="round"> Sign up  with Google
+              <!--<ion-icon name="logo-google" style="color:white"></ion-icon>-->
             </ion-button>
-            <ion-button style="text-transform: none" fill="solid" shape="box" class="apple"> Sign up with Apple
-              <ion-icon name="logo-apple" style="color:white"></ion-icon></ion-button>
+           <!--- <ion-button style="text-transform: none" fill="solid" shape="box" class="apple"> Sign up with Apple
+              <ion-icon name="logo-apple" style="color:white"></ion-icon></ion-button>-->
          
           </div>
     
           <!-- Already a member button will redirect to login page -->
           <div class="new-member-and-forgot">
-            <ion-button (click)="RedirectToLoginPage()" style="text-transform: none" fill="clear">Already have an account? Login!</ion-button>
+            <ion-button (click)="RedirectToLoginPage()" fill="clear">Already have an account? <br> Login!</ion-button>
             <br>
           </div>
 

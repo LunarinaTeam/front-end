@@ -179,56 +179,130 @@ display:none;
   color:#AF597A; 
   border-radius: 3px;
   text-align: center;
-  position: absolute;
+  position:absolute;
   margin-bottom: 340px;
 }
 
-ion-icon {
-  --ion-color-primary:#d17171;
- 
-}
 
 //This applies to all the input fields Email/Pass/Phonenum
+/*
 .wrapform{
   padding-top:180px;
 }
-
+*/
 .signup-btns{
-  margin-left: 65px;
+  margin-left: -69px;
+  margin-top: 28px;
   text-align: center;
-  height: 25px;
-  width: 100px;
-  --ion-color-primary:#d17171;
+  height: 45px;
+  width: 139px;
+  --ion-color-primary:#E89494;
   font-family: Copperplate;
+  position:absolute;
 }
 
 .checkbox {
   margin-top: 20px;
   margin-bottom: 10px;
+  position:absolute;
 }
 
 // CHANGES: ADDED ICONS TO SOCIAL BUTTONS 
+/*
 .social-btns{    
-  --ion-color-primary:#d17171;
+  --ion-color-primary:#E89494;
  margin-top: 20px;
  text-align: center;
- ion-button{
-  font-family: Copperplate;
-     font-size: small;
-     height: 25px;
-     width: 225px;
- }
  ion-icon {
-  position: absolute;
+  position:absolute;
   left:180px;
   }
 }
+*/
+
+.social-btns ion-button.google {
+    font-family: Copperplate;
+    font-size: .5em;
+    height: 30px;
+    width: 112px;
+    position:absolute;
+    margin-left: -55px;
+    margin-top: 120px;
+    --ion-color-primary:#E89494;
+}
+.social-btns ion-button.facebook {
+  font-family: Copperplate;
+  font-size: .5em;
+  height: 30px;
+  width: 112px;
+  position:absolute;
+  margin-left: -55px;
+  margin-top: 160px;
+  --ion-color-primary:#E89494;
+  
+}
 
 .new-member-and-forgot{
+  position:absolute;
   text-align: center;
+  font-size:.5em;
   --ion-color-primary:#d17171;
   ion-button{
       font-family: Copperplate;
       font-size: 15px;
+      margin-top: 190px;
+      margin-left:-105px;
   }
 }
+
+.signup-c ion-card-content ion-input.email{  
+  position:absolute;
+  margin-top:-235%;
+  margin-left:-400.5%;
+  margin-bottom:28%;
+  width: 830%;
+}
+
+.signup-c ion-card-content ion-icon.email {  
+  position:absolute;
+  margin-top:-240%;
+  margin-left:-400.5%;
+  margin-bottom:28%;
+}
+.signup-c ion-card-content h6.email{  
+  font-family: Copperplate;
+  font-size: .7em;
+  --ion-color-primary:#E89494;
+  color:#E89494;
+  position:absolute; 
+  margin-top:-265%;
+  margin-left:-400.5%;
+  margin-bottom:28%;
+}
+
+.signup-c ion-card-content ion-input.password{  
+  position:absolute;
+  margin-top:-100%;
+  margin-left:-400.5%;
+  margin-bottom:28%;
+  width: 830%;
+}
+
+.signup-c ion-card-content ion-icon.password{  
+  position:absolute;
+  margin-top:-100%;
+  margin-left:-400.5%;
+  margin-bottom:28%;
+}
+
+.signup-c ion-card-content h6.password{  
+  font-family: Copperplate;
+  font-size: .7em;
+  --ion-color-primary:#E89494;
+  color:#E89494;
+  position:absolute; 
+  margin-top:-130%;
+  margin-left:-400.5%;
+  margin-bottom:28%;
+}
+
