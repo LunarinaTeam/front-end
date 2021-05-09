@@ -1,78 +1,92 @@
-<ion-header class="ion-no-border">
-  <ion-toolbar>
-
-  </ion-toolbar>
-</ion-header>
 
 <ion-content>
-    <ion-card-header>
-                                          <!-- CHANGES MADE  -->
-      <!-- This line was commented out because the sign up page will come before the log in therefore we do not need a back button in this page -->
-      <!-- <div class="return-btns">
-        <ion-button (click)="RedirectToOtherPage()" style="text-transform: none" fill="clear" class="ion-no-padding">  << Back to Login</ion-button>
-      </div> -->
+  <ion-slides pages pager="true" [options]="slideOpts">
+    <ion-slide class="welcome">
+      <h4>Lunarina</h4>
+      <h5>Welcome to the community!</h5>
+      <iframe 
+        src="https://www.youtube.com/embed/UsVFCwSdFAU"></iframe>
+      <p>On a journey of awakening to the beauty of yourself. 
+        We invite you to join our online community to discover 
+        the guiding wisdom of  your cycles and tune
+        your life to the rhythm of your body.</p>
+        <h3>Swipe to take a tour of the Lunarina App!</h3>
+    </ion-slide>
+    <ion-slide class="home">
+      <ion-card class="home-card">
+        <img src="../../assets/images/HomePagePreview.png">
+      </ion-card>
+      <h3>Swipe to take a tour of the Lunarina App!</h3>
+    </ion-slide>
+   <ion-slide class="tracking">
+      <ion-card class="tracking-card">
+        <img src="../../assets/images/TrackingPagePreview.png">
+      </ion-card>
+      <h3>Swipe to take a tour of the Lunarina App!</h3>
+    </ion-slide>
+    <ion-slide class="circle">
+      <ion-card class="circle-card">
+        <img src="../../assets/images/CirclePagePreview.png">
+      </ion-card>
+      <h3>Swipe to take a tour of the Lunarina App!</h3>
+    </ion-slide> 
+
+  
+    <ion-slide id="signup" class="signup-c">
 
       <img class="displayed" height="100 px" width="100 px" src="assets/images/Logo.png">
-      
-      <ion-card-title>
-        Welcome
-      </ion-card-title>
-      
-      <ion-card-subtitle style="text-transform: none" class="quote">
-        Join the Lunarina community!
-        A world of wonder awaits...
-      </ion-card-subtitle>
-    </ion-card-header>
-                          <!-- CHANGES MADE - Icons added to the front of input fields -->
-    <ion-card-content>
-      <div class="wrapform">
-        <ion-item color="transparent">
-          <ion-icon color="primary"  size="small" name="mail" slot="start"></ion-icon>
-          <ion-input type="text" [(ngModel)]="email" placeholder="Email" required></ion-input>
-        </ion-item>
-        <ion-item color="transparent"> 
-          <ion-icon color="primary" size="small" name="key" slot="start"></ion-icon>
-          <ion-input type="password" name="password" [(ngModel)]="password" placeholder="Password" required></ion-input>
-        </ion-item>
-        <ion-item color="transparent">
-          <ion-icon color="primary" size="small" name="call" slot="start"></ion-icon>
-          <ion-input type="phonenumber" name="phonenumber" [(ngModel)]="phonenumber" placeholder="Phone Number" optional></ion-input>
-        </ion-item>
-      </div>
-      <!-- Checkbox for terms and conditions and sign up button. They are under the same form so user will not be able to sign up without marking checkbox first -->
-      <form action="#" onsubmit="if(document.getElementById('agree').checked) { return true; } else { alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy'); return false; }">
+      <h4>Welcome</h4>
+      <h5> Join the Lunarina community!
+        A world of wonder awaits...</h5>
+ 
+        <ion-card-content>
 
-        <input class="checkbox" type="checkbox" name="checkbox" value="check" id="agree">
-        <ion-text color="primary">
-          Agree to the Terms and Conditions
-        </ion-text>
-          <div class="signup-btns">
-          <ion-button style="text-transform: none" type="submit" fill="solid" shape="round" class="signup-btns">
-          Sign Up
-          </ion-button>
-        </div>
+          <form [formGroup]="validationFormUser" (ngSubmit) = "registerUser(validationFormUser.value)">
+          <div class="wrapform">
+            <ion-item color="transparent">
+              <ion-icon color="primary"  size="small" name="mail" slot="start"></ion-icon>
+              <ion-input type="text" name="emailSignup" [(ngModel)]="emailSignup" formControlName="emailSignup" placeholder="Email" required></ion-input> 
+            </ion-item>
 
-      </form>
-      
-      <!-- Social media buttons. Include facebook/google/apple. Signup by email is commented out because it is not needed. -->
-      <div class="social-btns">
 
-        <ion-button style="text-transform: none" fill="solid" shape="box">  Sign up with Facebook
-          <ion-icon name="logo-facebook" style="color:white"></ion-icon>
-        </ion-button>
-        <ion-button style="text-transform: none" fill="solid" shape="box" class="google"> Sign up  with Google
-          <ion-icon name="logo-google" style="color:white"></ion-icon>
-        </ion-button>
-        <ion-button style="text-transform: none" fill="solid" shape="box" class="apple"> Sign up with Apple
-          <ion-icon name="logo-apple" style="color:white"></ion-icon></ion-button>
-     
-      </div>
+            <ion-item color="transparent"> 
+              <ion-icon color="primary" size="small" name="key" slot="start"></ion-icon>
+           <ion-input type="password" name="password" [(ngModel)]="password" formControlName="password" placeholder="Password" required></ion-input> 
+            </ion-item>
+          </div>
 
-      <!-- Already a member button will redirect to login page -->
-      <div class="new-member-and-forgot">
-        <ion-button (click)="RedirectToLoginPage()" style="text-transform: none" fill="clear">Already have an account? Login!</ion-button>
-        <br>
-      </div>
-    </ion-card-content>
+              <div class="signup-btns">
+              <ion-button (click)="registerUser(validationFormUser.value)" style="text-transform: none" type="submit" fill="solid" shape="round" class="signup-btns" [disabled]="!validationFormUser.valid">
+              Sign Up
+              </ion-button>
+              
+            </div>
+    
 
+          <div class="social-btns">
+
+            <ion-button style="text-transform: none" fill="solid" shape="box">  Sign up with Facebook
+              <ion-icon name="logo-facebook" style="color:white"></ion-icon>
+            </ion-button>
+            <ion-button style="text-transform: none" fill="solid" shape="box" class="google"> Sign up  with Google
+              <ion-icon name="logo-google" style="color:white"></ion-icon>
+            </ion-button>
+            <ion-button style="text-transform: none" fill="solid" shape="box" class="apple"> Sign up with Apple
+              <ion-icon name="logo-apple" style="color:white"></ion-icon></ion-button>
+         
+          </div>
+    
+          <!-- Already a member button will redirect to login page -->
+          <div class="new-member-and-forgot">
+            <ion-button (click)="RedirectToLoginPage()" style="text-transform: none" fill="clear">Already have an account? Login!</ion-button>
+            <br>
+          </div>
+
+        </form>
+        </ion-card-content>
+    </ion-slide>
+
+  </ion-slides>
 </ion-content>
+
+
