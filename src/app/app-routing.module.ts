@@ -32,6 +32,10 @@ const routes: Routes = [
     canActivate:[AuthGuard]
   },
   {
+    path: 'usercircle',
+    loadChildren: () => import('./pages/usercircle/usercircle.module').then( m => m.UsercirclePageModule)
+  },
+  {
     path: 'tracking1',
     loadChildren: () => import('./pages/tracking1/tracking1.module').then( m => m.Tracking1PageModule)
   },
@@ -83,6 +87,10 @@ const routes: Routes = [
   {
     path: 'askfortracking',
     loadChildren: () => import('./pages/askfortracking/askfortracking.module').then( m => m.AskfortrackingPageModule)
+  },
+  {
+    path: 'splashpage',
+      loadChildren: () => import('./pages/splashpage/splashpage.module').then( m => m.SplashpagePageModule)
   },
  {
     path: 'media-my-list',
