@@ -16,7 +16,7 @@ export class Tracking10Page implements OnInit {
 
   RedirectToOtherPage()
   {
-    this.router.navigateByUrl('/tracking10')
+    this.router.navigateByUrl('/home')
   }
 
   async PresentAlert()
