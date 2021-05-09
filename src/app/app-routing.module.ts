@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import {AuthGuard} from 'src/app/guards/auth.guard';
@@ -84,7 +85,11 @@ const routes: Routes = [
   {
     path: 'askfortracking',
     loadChildren: () => import('./pages/askfortracking/askfortracking.module').then( m => m.AskfortrackingPageModule)
-  }
+  },
+{
+  path: 'splashpage',
+    loadChildren: () => import('./pages/splashpage/splashpage.module').then( m => m.SplashpagePageModule)
+}
 ];
 
 @NgModule({
