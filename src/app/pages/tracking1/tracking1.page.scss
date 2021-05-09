@@ -1,5 +1,5 @@
 ion-content{
-  --background: url(/assets/images/loginbackground.png) no-repeat center/cover fixed;
+  --background: url(../../../assets/images/Hellofriendtrackingbackground@2x.jpg) no-repeat center/cover fixed;
 }
 
 ion-header{
@@ -38,6 +38,34 @@ ion-toolbar{
   font-weight: 350;
 }
 
+.prev-slide-bottom-text{
+  font-family: Copperplate;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  font-size: 10px;
+  color:#818181;
+  text-align: center;
+  font-weight: 350;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.page-number-bottom-text{
+  font-family: Copperplate;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  padding-right: 20px;
+  font-size: 10px;
+  color:#818181;
+  text-align: center;
+  font-weight: 350;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 .btn-container {
   height: 200px;
   position: relative;
@@ -57,4 +85,14 @@ ion-toolbar{
         font-weight:bold;
         font-size: 15px;
     }
+}
+
+ion-tab-bar{
+  --background: rgb(232, 148, 148);
+  --color-selected:white;
+}
+
+ion-label{
+  font-family: Garamond Premier Pro;
+  font-size: small;
 }

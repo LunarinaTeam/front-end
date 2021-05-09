@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tracking1',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Tracking1Page implements OnInit {
 
-  constructor() { }
+  constructor(public router:Router) { }
 
   ngOnInit() {
+  }
+
+  RedirectToOtherPage()
+  {
+    this.router.navigateByUrl('/tracking2')
   }
 
 }

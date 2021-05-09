@@ -1,0 +1,51 @@
+ion-content{
+  --background : url(../../../assets/images/areyouinterestedintrackingbackground@2x.jpg) no-repeat center/cover fixed;
+}
+
+.no-btn{
+    text-align: center;
+    height: 80px;
+    width: 75px;
+    --ion-color-primary:#E89494;
+    font-family: Copperplate;
+    position:absolute;
+    margin-top:98%;
+    padding-top:10%;
+    margin-left:51%;
+  }
+
+  .yes-btn{
+    text-align: center;
+    height: 80px;
+    width: 75px;
+    --ion-color-primary:#E89494;
+    font-family: Copperplate;
+    position:absolute;
+    margin-top:98%;
+    padding-top:10%;
+    margin-left:26%;
+  }
+
+ion-content h5{
+  font-family: Georgia;
+  font-size: 1.5em;
+  font-weight: normal;
+  color:#AF597A; 
+  border-radius: 1%;
+  text-align: center;
+  margin-top:87%;
+  margin-left:23%;
+  position:absolute;
+}
+
+ion-content h6 {
+  font-family: Georgia;
+  font-size: 1em;
+  font-weight: normal;
+  color:#90867E; 
+  border-radius: 1%;
+  text-align: center;
+  margin-top:130%;
+  margin-left:11%;
+  position:absolute;
+}
