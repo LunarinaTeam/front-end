@@ -26,11 +26,14 @@ const routes: Routes = [
     canActivate: [AuthGuard]
   },
   {
+    path: 'usercircle',
+    loadChildren: () => import('./pages/usercircle/usercircle.module').then( m => m.UsercirclePageModule)
+  },
+  {
     path: 'tracking1',
     loadChildren: () => import('./pages/tracking1/tracking1.module').then( m => m.Tracking1PageModule)
   },
   {
-
     path: 'tracking2',
     loadChildren: () => import('./pages/tracking2/tracking2.module').then( m => m.Tracking2PageModule)
   },
