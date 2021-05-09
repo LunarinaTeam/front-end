@@ -20,6 +20,12 @@ const routes: Routes = [
     path: 'forgotpassword',
     loadChildren: () => import('./pages/forgotpassword/forgotpassword.module').then( m => m.ForgotpasswordPageModule)
   },
+
+  {
+    path: 'tablinks',
+  loadChildren: () => import('./pages/tablinks/tablinks.module').then( m => m.TablinksPageModule)
+  },
+
   {
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then(m => m.HomePageModule),
@@ -77,8 +83,11 @@ const routes: Routes = [
   {
     path: 'askfortracking',
     loadChildren: () => import('./pages/askfortracking/askfortracking.module').then( m => m.AskfortrackingPageModule)
-  }
-
+  },
+ {
+    path: 'media-my-list',
+    loadChildren: () => import('./pages/media_my_list/media-my-list.module').then( m => m.MediaMyListPageModule)
+  },
 
 
 
