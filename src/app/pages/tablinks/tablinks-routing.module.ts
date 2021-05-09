@@ -19,10 +19,10 @@ const routes: Routes = [
       //   path: 'circle',
       //   loadChildren: () => import('../circle/circle.module').then(m => m.CirclePageModule)
       // },
-      // {
-      //   path: 'media',
-      //   loadChildren: () => import('../media/media.module').then(m => m.MediaPageModule)
-      // },
+      {
+       path: 'media_my_list',
+       loadChildren: () => import('../media_my_list/media-my-list.module').then(m => m.MediaMyListPageModule)
+      },
       // {
       //   path: 'shop',
       //   loadChildren: () => import('../shop/shop.module').then(m => m.ShopPageModule)

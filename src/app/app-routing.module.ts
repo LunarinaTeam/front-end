@@ -77,9 +77,12 @@ const routes: Routes = [
   {
     path: 'askfortracking',
     loadChildren: () => import('./pages/askfortracking/askfortracking.module').then( m => m.AskfortrackingPageModule)
+  },
+
+  {
+    path: 'media-my-list',
+    loadChildren: () => import('./pages/media_my_list/media-my-list.module').then( m => m.MediaMyListPageModule)
   }
-
-
 
 
 
