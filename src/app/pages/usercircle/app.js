@@ -1,0 +1,1 @@
+angular.module('starter', ['ionic', 'starter.controllers','ionic-circular-menu']);

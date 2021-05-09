@@ -1,9 +1,5 @@
 ion-content{
-    --background: url(../../../assets/images/wouldyouliketotrackbackground.png) no-repeat center/cover fixed; 
-}
-
-ion-content::before{
-  opacity:53%;
+  --background : url(../../../assets/images/areyouinterestedintrackingbackground@2x.jpg) no-repeat center/cover fixed;
 }
 
 .no-btn{
@@ -13,7 +9,7 @@ ion-content::before{
     --ion-color-primary:#E89494;
     font-family: Copperplate;
     position:absolute;
-    margin-top:112%;
+    margin-top:98%;
     padding-top:10%;
     margin-left:51%;
   }
@@ -25,7 +21,7 @@ ion-content::before{
     --ion-color-primary:#E89494;
     font-family: Copperplate;
     position:absolute;
-    margin-top:112%;
+    margin-top:98%;
     padding-top:10%;
     margin-left:26%;
   }
@@ -37,7 +33,7 @@ ion-content h5{
   color:#AF597A; 
   border-radius: 1%;
   text-align: center;
-  margin-top:100%;
+  margin-top:87%;
   margin-left:23%;
   position:absolute;
 }
@@ -49,7 +45,7 @@ ion-content h6 {
   color:#90867E; 
   border-radius: 1%;
   text-align: center;
-  margin-top:140%;
+  margin-top:130%;
   margin-left:11%;
   position:absolute;
 }

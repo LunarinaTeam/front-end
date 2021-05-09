@@ -44,7 +44,7 @@ export class LoginPage implements OnInit {
     try{
       this.authService.loginFireauth(value).then(resp =>{
         console.log(resp)
-        this.router.navigateByUrl('/home')
+        this.router.navigateByUrl('/tablinks/home')
       })
     }catch(err){
       console.log(err); 
@@ -61,10 +61,6 @@ export class LoginPage implements OnInit {
     this.router.navigateByUrl('/forgotpassword')
   }
 
-  RedirectToHomePage()
-  {
-    this.router.navigateByUrl('/tablinks/home')
-  }
   callMethodsForLoginOnClick(){
     //this.RedirectToOtherPage(); 
     //this.LoginUser(validationFormUser.value);

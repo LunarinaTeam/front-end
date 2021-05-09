@@ -1,6 +1,6 @@
 ion-slides {
   height: 100%;
-  --ion-color-primary:#d17171; //Added this line 
+  --ion-color-primary:#d17171;  
   --bullet-background-active:#d39393;
   background-color: #efe1d4;
   border-color: #efe1d4;
@@ -8,8 +8,12 @@ ion-slides {
 
 }
 
+ion-content iframe{
+  border-radius: 10px;
+}
+
 .welcome{
-  background-image: url("../../../assets/images/welcomebackground@2x.jpg");
+  background-image: url("../../../assets/images/welcomebackground2.png");
   background-size: cover;
   background-position: right 5px bottom 10px;
   -webkit-background-size: cover;
@@ -55,7 +59,7 @@ ion-slides {
   border-radius: 1%;
   text-align: center;
   position: absolute;
-  padding-top:33.7%;
+  padding-top:42.7%;
   margin-left:5.3%;
   margin-right: 5.3%;
   line-height: 1.6;
@@ -130,7 +134,7 @@ display:none;
 // SIGN UP CSS 
   //SIGNUP CSS backgroud image  
   #signup{
-    background-image: url("../../../assets/images/loginbackground3.png");
+    background-image: url("../../../assets/images/loginbackground.png");
     background-size: cover;
     background-position: right 5px top 0px ;
     -webkit-background-size: cover;

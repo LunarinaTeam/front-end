@@ -17,8 +17,7 @@ ion-content{
 }
 
 .date {
-    margin-top: 5%ll;
-    padding-top: 30px;
+    padding-top: 10px;
     padding-left: 15px;
     overflow: visible;
     font-family: Garamond Premier Pro;
@@ -28,8 +27,6 @@ ion-content{
 }
 
 .welcome {
-    overflow: visible;
-    padding-top: 15px;
     padding-left: 15px;
     font-family: Silk Serif;
     font-style: normal;
@@ -39,24 +36,25 @@ ion-content{
 }
 
 #grid1{
-    padding-top: 20px;
-    padding-left: 15px;
+    padding-top: 15px;
+    padding-left: 12px;
     font-family: Garamond Premier Pro;
     font-weight: bold;
     color:rgba(232, 148, 148);
     background-color: #FFFFFF;
     border-radius: 15px;
-    padding:5px;
     background-size: 25px 25px cover;
     box-shadow: 1px 1px 4px 1px #888888;
     height: 100%;
 }
 
 .grid_text{
-    font-size: 12px;
+    font-size: smaller;
     font-family: Garamond Premier Pro;
     font-weight: lighter;
+    text-align: left;
 }
+
 
 .Path_4 {
     width: 30%;
@@ -93,22 +91,34 @@ ion-content{
     border-radius: 5px;
 }
 
+.icons{
+    padding-top: 10px;
+    height: 80%;
+    width: 70%;
+    object-fit: scale-down;
+}
+
 .select_icons{
     font-family: Silk Serif;
-    padding-left: 15px;
+    padding-bottom: 5px;
     font-size: small;
     color:rgba(232, 148, 148);
 }
 
 .submit_button{
     font-family: Garamond Premier Pro;
-    padding-left: 60%;
+    padding-inline-start: inherit;
 }
 
 #submit_button{
     --background:rgba(232,148,148,1);
+
 }
 
+#videos{
+    padding-top: 5%;
+    padding-left: 5%;
+}
 
 .med_videos{
     padding-left: 5%;
@@ -119,6 +129,61 @@ ion-content{
 
 #com_label{
     color: rgba(232,148,148,1);
+    font-family: Silk Serif;
+
+}
+
+.community{
+    color: rgba(232,148,148,1);
     font-family: Garamond Premier Pro;
-    font-weight: bold;
+    padding-left: 10px;
+    font-size: small;
+}
+
+#circle_cont{
+    color: rgba(232,148,148,1);
+    font-family: Silk Serif;
+}
+
+.circle_text{
+    color: rgba(232,148,148,1);
+    font-family: Garamond Premier Pro;
+    font-size: small;
+    padding-top: 46%;
+    padding-left: 5%;
+}
+
+#Mask_Group_11{
+    padding-top: 10%;
+    padding-left: 20%;
+}
+
+.underline{
+    text-decoration:underline;
+    text-align: center;
+    padding-right: 20%;
+    font-size: small;
+}
+
+.circle12{
+    position: absolute;
+    padding-top: 8%;
+    padding-left: 40%;
+    height: auto;
+    width: auto;
+    overflow: visible;
+}
+
+.circle13{
+    position: absolute;
+    padding-top: 20%;
+    padding-left: 30%;
+    overflow: visible;
+}
+
+.circle14{
+    position: absolute;
+    padding-left: 24%;
+    padding-top: 8%;
+    overflow: visible;
 }
