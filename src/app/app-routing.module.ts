@@ -1,4 +1,3 @@
-
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import {AuthGuard} from 'src/app/guards/auth.guard';
@@ -21,10 +20,12 @@ const routes: Routes = [
     path: 'forgotpassword',
     loadChildren: () => import('./pages/forgotpassword/forgotpassword.module').then( m => m.ForgotpasswordPageModule)
   },
+
   {
     path: 'tablinks',
   loadChildren: () => import('./pages/tablinks/tablinks.module').then( m => m.TablinksPageModule)
   },
+
   {
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then(m => m.HomePageModule),
@@ -39,6 +40,7 @@ const routes: Routes = [
     loadChildren: () => import('./pages/tracking1/tracking1.module').then( m => m.Tracking1PageModule)
   },
   {
+
     path: 'tracking2',
     loadChildren: () => import('./pages/tracking2/tracking2.module').then( m => m.Tracking2PageModule)
   },
@@ -86,10 +88,20 @@ const routes: Routes = [
     path: 'askfortracking',
     loadChildren: () => import('./pages/askfortracking/askfortracking.module').then( m => m.AskfortrackingPageModule)
   },
-{
-  path: 'splashpage',
-    loadChildren: () => import('./pages/splashpage/splashpage.module').then( m => m.SplashpagePageModule)
-}
+  {
+    path: 'splashpage',
+      loadChildren: () => import('./pages/splashpage/splashpage.module').then( m => m.SplashpagePageModule)
+  },
+ {
+    path: 'media-my-list',
+    loadChildren: () => import('./pages/media_my_list/media-my-list.module').then( m => m.MediaMyListPageModule)
+  },
+
+
+
+
+
+
 ];
 
 @NgModule({
