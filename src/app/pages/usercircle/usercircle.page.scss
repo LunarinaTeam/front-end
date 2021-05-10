@@ -1,7 +1,7 @@
 body{
     padding: 0;
     margin:0;
-    background: url(/assets/images/loginbackground.png) no-repeat center/cover fixed;
+    background: url(/assets/images/usercircleback.png) no-repeat center/cover fixed;
     overflow: hidden;
 }
 .toggle{
@@ -14,7 +14,7 @@ body{
     top: 0;
     bottom: 0;
     left:0;
-    right: 0;
+    right: 1;
 } 
 
 .fa-plus{
@@ -29,14 +29,14 @@ body{
     background-color: #ffffff;
     height: 100px;
     width: 100px;
-    transform: scale(3);
-    border-radius: 50%;
+    transform: scale(4);
+    border-radius:  0 90px 90px 0;
     position: absolute;
     margin: auto;
     top:0;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 1;
     z-index: -1;
 }
 
