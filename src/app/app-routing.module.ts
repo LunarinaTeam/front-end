@@ -5,7 +5,7 @@ import {AuthGuard} from 'src/app/guards/auth.guard';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'splashpage',
     pathMatch: 'full'
   },
   {
@@ -96,10 +96,6 @@ const routes: Routes = [
     path: 'media-my-list',
     loadChildren: () => import('./pages/media_my_list/media-my-list.module').then( m => m.MediaMyListPageModule)
   },
-
-
-
-
 
 
 ];
