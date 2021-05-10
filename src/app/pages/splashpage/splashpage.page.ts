@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-splashpage',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SplashpagePage implements OnInit {
 
-  constructor() { }
+  constructor(public router: Router ) { }
 
   ngOnInit() {
+  }
+  RedirectToSignUp(){
+    this.router.navigateByUrl('/signup');
   }
 
 }
