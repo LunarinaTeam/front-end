@@ -15,10 +15,10 @@ const routes: Routes = [
       //   path: 'tracking',
       //   loadChildren: () => import('../tracking/tracking.module').then(m => m.TrackingPageModule)
       // },
-      // {
-      //   path: 'circle',
-      //   loadChildren: () => import('../circle/circle.module').then(m => m.CirclePageModule)
-      // },
+      {
+         path: 'usercircle',
+         loadChildren: () => import('../usercircle/usercircle.module').then(m => m.UsercirclePageModule)
+       },
       {
        path: 'media_my_list',
        loadChildren: () => import('../media_my_list/media-my-list.module').then(m => m.MediaMyListPageModule)

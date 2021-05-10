@@ -18,4 +18,9 @@ export class TablinksPage implements OnInit {
 
   }
 
+  RedirectToUserCirclePage(){
+    this.router.navigateByUrl('/tablinks/usercircle')
+
+  }
+
 }
